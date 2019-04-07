@@ -1,0 +1,74 @@
+@keyframes imageFade {
+	0% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	20% {
+		opacity: 1;
+		transform: translate(0, -5px);
+	}
+	20% {
+		opacity: 1;
+		transform: translate(0, 2px);
+	}
+	30% {
+		opacity: 1;
+		transform: translate(0, -4px);
+	}
+	60% {
+		opacity: 1;
+		transform: translate(0, 4px);
+	}
+	88% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	93% {
+		opacity: .6;
+		transform: translate(0px, 3px);
+	}
+	99% {
+		opacity: .2;
+		transform: translate(0px, 4px);
+	}
+}
+
+body {
+	background: black;
+}
+
+div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	position: relative;
+	width: 50vw;
+	max-width: 430px;
+
+	animation-name: imageFade;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	/* animation-timing-function: steps(1, end); */
+}
+
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	object-fit: cover;
+}
