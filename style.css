@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
 @keyframes imageFade {
 	0% {
 		opacity: 1;
@@ -49,9 +51,6 @@ div {
 }
 
 img {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	z-index: 1;
 	position: relative;
 	width: 50vw;
@@ -61,7 +60,6 @@ img {
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
-	/* animation-timing-function: steps(1, end); */
 }
 
 video {
@@ -71,4 +69,44 @@ video {
 	right: 0;
 	bottom: 0;
 	object-fit: cover;
+}
+
+nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	display: flex;
+	justify-content: flex-end;
+
+        padding: 2vw;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+li {
+	list-style: none;
+}
+
+li:nth-child(odd) {
+        margin-right: 3vw;
+}
+
+a {
+	font-family: 'Share Tech Mono', monospace;
+	color: white;
+	text-decoration: none;
+
+	opacity: 0.2;
+	transition: opacity 1s;
+        font-size: 5vw;
+}
+
+a:hover {
+	opacity: 1;
 }
