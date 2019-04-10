@@ -51,9 +51,6 @@ div {
 }
 
 img {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	z-index: 1;
 	position: relative;
 	width: 50vw;
@@ -63,16 +60,15 @@ img {
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
-	/* animation-timing-function: steps(1, end); */
 }
 
 video {
+	object-fit: cover;
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	object-fit: cover;
 }
 
 nav {
@@ -84,7 +80,7 @@ nav {
 	display: flex;
 	justify-content: flex-end;
 
-	padding: 9px;
+    padding: 7px 12px;
 }
 
 ul {
@@ -98,17 +94,17 @@ li {
 }
 
 li:nth-child(odd) {
-	margin-right: 7px;
+    margin-right: 18px;
 }
 
 a {
-	/* font-family: 'VT323', monospace; */
 	font-family: 'Share Tech Mono', monospace;
 	color: white;
 	text-decoration: none;
 
 	opacity: 0.2;
 	transition: opacity 1s;
+    font-size: 20px;
 }
 
 a:hover {
